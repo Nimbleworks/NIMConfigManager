@@ -15,13 +15,12 @@ Pod::Spec.new do |s|
                        * Don't worry about the indent, we strip it!
                        DESC
   s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "John Nye" => "john@nimbleworks.co.uk" }
   s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/NAME'
+  s.social_media_url = 'https://twitter.com/nimbleworks'
 
-  # s.platform     = :ios, '5.0'
+  s.platform     = :ios, '7.0'
   # s.ios.deployment_target = '5.0'
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true

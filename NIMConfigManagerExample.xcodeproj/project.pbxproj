@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3584D6518BBEC5C0016381A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3584D6418BBEC5C0016381A /* Foundation.framework */; };
+		B3584D6718BBEC5C0016381A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3584D6618BBEC5C0016381A /* CoreGraphics.framework */; };
+		B3584D6918BBEC5C0016381A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3584D6818BBEC5C0016381A /* UIKit.framework */; };
+		B3584D6F18BBEC5C0016381A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3584D6D18BBEC5C0016381A /* InfoPlist.strings */; };
+		B3584D7118BBEC5C0016381A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584D7018BBEC5C0016381A /* main.m */; };
+		B3584D7518BBEC5C0016381A /* NIMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584D7418BBEC5C0016381A /* NIMAppDelegate.m */; };
+		B3584D7818BBEC5C0016381A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3584D7618BBEC5C0016381A /* Main.storyboard */; };
+		B3584D7B18BBEC5C0016381A /* NIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584D7A18BBEC5C0016381A /* NIMViewController.m */; };
+		B3584D7D18BBEC5C0016381A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3584D7C18BBEC5C0016381A /* Images.xcassets */; };
+		B3584D8418BBEC5C0016381A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3584D8318BBEC5C0016381A /* XCTest.framework */; };
+		B3584D8518BBEC5C0016381A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3584D6418BBEC5C0016381A /* Foundation.framework */; };
+		B3584D8618BBEC5C0016381A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3584D6818BBEC5C0016381A /* UIKit.framework */; };
+		B3584D8E18BBEC5C0016381A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3584D8C18BBEC5C0016381A /* InfoPlist.strings */; };
+		B3584D9018BBEC5C0016381A /* NIMConfigManagerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584D8F18BBEC5C0016381A /* NIMConfigManagerExampleTests.m */; };
+		B3584D9D18BBED5F0016381A /* NIMConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584D9C18BBED5F0016381A /* NIMConfigManager.m */; };
+		B3584DA218BBEEB80016381A /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3584DA118BBEEB80016381A /* test.plist */; };
+		B3584DA718BBEFE00016381A /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3584DA618BBEFE00016381A /* config.plist */; };
+		B3584DAA18BBF1A00016381A /* NIMConfigManager+ConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584DA918BBF1A00016381A /* NIMConfigManager+ConfigManager.m */; };
+		B3584DAD18BBF4700016381A /* NIMConfigManager+TestConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584DAC18BBF4700016381A /* NIMConfigManager+TestConfig.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3584D8718BBEC5C0016381A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3584D5918BBEC5C0016381A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3584D6018BBEC5C0016381A;
+			remoteInfo = NIMConfigManagerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3584D6118BBEC5C0016381A /* NIMConfigManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIMConfigManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3584D6418BBEC5C0016381A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3584D6618BBEC5C0016381A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B3584D6818BBEC5C0016381A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3584D6C18BBEC5C0016381A /* NIMConfigManagerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NIMConfigManagerExample-Info.plist"; sourceTree = "<group>"; };
+		B3584D6E18BBEC5C0016381A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3584D7018BBEC5C0016381A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3584D7218BBEC5C0016381A /* NIMConfigManagerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NIMConfigManagerExample-Prefix.pch"; sourceTree = "<group>"; };
+		B3584D7318BBEC5C0016381A /* NIMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NIMAppDelegate.h; sourceTree = "<group>"; };
+		B3584D7418BBEC5C0016381A /* NIMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIMAppDelegate.m; sourceTree = "<group>"; };
+		B3584D7718BBEC5C0016381A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3584D7918BBEC5C0016381A /* NIMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NIMViewController.h; sourceTree = "<group>"; };
+		B3584D7A18BBEC5C0016381A /* NIMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIMViewController.m; sourceTree = "<group>"; };
+		B3584D7C18BBEC5C0016381A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B3584D8218BBEC5C0016381A /* NIMConfigManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIMConfigManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3584D8318BBEC5C0016381A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B3584D8B18BBEC5C0016381A /* NIMConfigManagerExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NIMConfigManagerExampleTests-Info.plist"; sourceTree = "<group>"; };
+		B3584D8D18BBEC5C0016381A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3584D8F18BBEC5C0016381A /* NIMConfigManagerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIMConfigManagerExampleTests.m; sourceTree = "<group>"; };
+		B3584D9B18BBED5F0016381A /* NIMConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIMConfigManager.h; sourceTree = "<group>"; };
+		B3584D9C18BBED5F0016381A /* NIMConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIMConfigManager.m; sourceTree = "<group>"; };
+		B3584DA118BBEEB80016381A /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		B3584DA618BBEFE00016381A /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		B3584DA818BBF1A00016381A /* NIMConfigManager+ConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIMConfigManager+ConfigManager.h"; sourceTree = "<group>"; };
+		B3584DA918BBF1A00016381A /* NIMConfigManager+ConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NIMConfigManager+ConfigManager.m"; sourceTree = "<group>"; };
+		B3584DAB18BBF4700016381A /* NIMConfigManager+TestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIMConfigManager+TestConfig.h"; sourceTree = "<group>"; };
+		B3584DAC18BBF4700016381A /* NIMConfigManager+TestConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NIMConfigManager+TestConfig.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3584D5E18BBEC5C0016381A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3584D6718BBEC5C0016381A /* CoreGraphics.framework in Frameworks */,
+				B3584D6918BBEC5C0016381A /* UIKit.framework in Frameworks */,
+				B3584D6518BBEC5C0016381A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3584D7F18BBEC5C0016381A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3584D8418BBEC5C0016381A /* XCTest.framework in Frameworks */,
+				B3584D8618BBEC5C0016381A /* UIKit.framework in Frameworks */,
+				B3584D8518BBEC5C0016381A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3584D5818BBEC5C0016381A = {
+			isa = PBXGroup;
+			children = (
+				B3584D9A18BBED5F0016381A /* NIMConfigManager */,
+				B3584D6A18BBEC5C0016381A /* NIMConfigManagerExample */,
+				B3584D8918BBEC5C0016381A /* NIMConfigManagerExampleTests */,
+				B3584D6318BBEC5C0016381A /* Frameworks */,
+				B3584D6218BBEC5C0016381A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3584D6218BBEC5C0016381A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3584D6118BBEC5C0016381A /* NIMConfigManagerExample.app */,
+				B3584D8218BBEC5C0016381A /* NIMConfigManagerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3584D6318BBEC5C0016381A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3584D6418BBEC5C0016381A /* Foundation.framework */,
+				B3584D6618BBEC5C0016381A /* CoreGraphics.framework */,
+				B3584D6818BBEC5C0016381A /* UIKit.framework */,
+				B3584D8318BBEC5C0016381A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3584D6A18BBEC5C0016381A /* NIMConfigManagerExample */ = {
+			isa = PBXGroup;
+			children = (
+				B3584D7318BBEC5C0016381A /* NIMAppDelegate.h */,
+				B3584D7418BBEC5C0016381A /* NIMAppDelegate.m */,
+				B3584D7618BBEC5C0016381A /* Main.storyboard */,
+				B3584D7918BBEC5C0016381A /* NIMViewController.h */,
+				B3584D7A18BBEC5C0016381A /* NIMViewController.m */,
+				B3584D7C18BBEC5C0016381A /* Images.xcassets */,
+				B3584D6B18BBEC5C0016381A /* Supporting Files */,
+				B3584DA618BBEFE00016381A /* config.plist */,
+				B3584DA818BBF1A00016381A /* NIMConfigManager+ConfigManager.h */,
+				B3584DA918BBF1A00016381A /* NIMConfigManager+ConfigManager.m */,
+			);
+			path = NIMConfigManagerExample;
+			sourceTree = "<group>";
+		};
+		B3584D6B18BBEC5C0016381A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3584D6C18BBEC5C0016381A /* NIMConfigManagerExample-Info.plist */,
+				B3584D6D18BBEC5C0016381A /* InfoPlist.strings */,
+				B3584D7018BBEC5C0016381A /* main.m */,
+				B3584D7218BBEC5C0016381A /* NIMConfigManagerExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3584D8918BBEC5C0016381A /* NIMConfigManagerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3584DA118BBEEB80016381A /* test.plist */,
+				B3584D8F18BBEC5C0016381A /* NIMConfigManagerExampleTests.m */,
+				B3584D8A18BBEC5C0016381A /* Supporting Files */,
+				B3584DAB18BBF4700016381A /* NIMConfigManager+TestConfig.h */,
+				B3584DAC18BBF4700016381A /* NIMConfigManager+TestConfig.m */,
+			);
+			path = NIMConfigManagerExampleTests;
+			sourceTree = "<group>";
+		};
+		B3584D8A18BBEC5C0016381A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3584D8B18BBEC5C0016381A /* NIMConfigManagerExampleTests-Info.plist */,
+				B3584D8C18BBEC5C0016381A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3584D9A18BBED5F0016381A /* NIMConfigManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3584D9B18BBED5F0016381A /* NIMConfigManager.h */,
+				B3584D9C18BBED5F0016381A /* NIMConfigManager.m */,
+			);
+			path = NIMConfigManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3584D6018BBEC5C0016381A /* NIMConfigManagerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3584D9318BBEC5C0016381A /* Build configuration list for PBXNativeTarget "NIMConfigManagerExample" */;
+			buildPhases = (
+				B3584D5D18BBEC5C0016381A /* Sources */,
+				B3584D5E18BBEC5C0016381A /* Frameworks */,
+				B3584D5F18BBEC5C0016381A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NIMConfigManagerExample;
+			productName = NIMConfigManagerExample;
+			productReference = B3584D6118BBEC5C0016381A /* NIMConfigManagerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3584D8118BBEC5C0016381A /* NIMConfigManagerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3584D9618BBEC5C0016381A /* Build configuration list for PBXNativeTarget "NIMConfigManagerExampleTests" */;
+			buildPhases = (
+				B3584D7E18BBEC5C0016381A /* Sources */,
+				B3584D7F18BBEC5C0016381A /* Frameworks */,
+				B3584D8018BBEC5C0016381A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3584D8818BBEC5C0016381A /* PBXTargetDependency */,
+			);
+			name = NIMConfigManagerExampleTests;
+			productName = NIMConfigManagerExampleTests;
+			productReference = B3584D8218BBEC5C0016381A /* NIMConfigManagerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3584D5918BBEC5C0016381A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NIM;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Nimbleworks LLP";
+				TargetAttributes = {
+					B3584D8118BBEC5C0016381A = {
+						TestTargetID = B3584D6018BBEC5C0016381A;
+					};
+				};
+			};
+			buildConfigurationList = B3584D5C18BBEC5C0016381A /* Build configuration list for PBXProject "NIMConfigManagerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3584D5818BBEC5C0016381A;
+			productRefGroup = B3584D6218BBEC5C0016381A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3584D6018BBEC5C0016381A /* NIMConfigManagerExample */,
+				B3584D8118BBEC5C0016381A /* NIMConfigManagerExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3584D5F18BBEC5C0016381A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3584DA718BBEFE00016381A /* config.plist in Resources */,
+				B3584D7D18BBEC5C0016381A /* Images.xcassets in Resources */,
+				B3584D6F18BBEC5C0016381A /* InfoPlist.strings in Resources */,
+				B3584D7818BBEC5C0016381A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3584D8018BBEC5C0016381A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3584DA218BBEEB80016381A /* test.plist in Resources */,
+				B3584D8E18BBEC5C0016381A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3584D5D18BBEC5C0016381A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3584D7118BBEC5C0016381A /* main.m in Sources */,
+				B3584D7B18BBEC5C0016381A /* NIMViewController.m in Sources */,
+				B3584DAA18BBF1A00016381A /* NIMConfigManager+ConfigManager.m in Sources */,
+				B3584D9D18BBED5F0016381A /* NIMConfigManager.m in Sources */,
+				B3584D7518BBEC5C0016381A /* NIMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3584D7E18BBEC5C0016381A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3584DAD18BBF4700016381A /* NIMConfigManager+TestConfig.m in Sources */,
+				B3584D9018BBEC5C0016381A /* NIMConfigManagerExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3584D8818BBEC5C0016381A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3584D6018BBEC5C0016381A /* NIMConfigManagerExample */;
+			targetProxy = B3584D8718BBEC5C0016381A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3584D6D18BBEC5C0016381A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3584D6E18BBEC5C0016381A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B3584D7618BBEC5C0016381A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3584D7718BBEC5C0016381A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3584D8C18BBEC5C0016381A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3584D8D18BBEC5C0016381A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3584D9118BBEC5C0016381A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B3584D9218BBEC5C0016381A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3584D9418BBEC5C0016381A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NIMConfigManagerExample/NIMConfigManagerExample-Prefix.pch";
+				INFOPLIST_FILE = "NIMConfigManagerExample/NIMConfigManagerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B3584D9518BBEC5C0016381A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NIMConfigManagerExample/NIMConfigManagerExample-Prefix.pch";
+				INFOPLIST_FILE = "NIMConfigManagerExample/NIMConfigManagerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B3584D9718BBEC5C0016381A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NIMConfigManagerExample.app/NIMConfigManagerExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NIMConfigManagerExample/NIMConfigManagerExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NIMConfigManagerExampleTests/NIMConfigManagerExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B3584D9818BBEC5C0016381A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NIMConfigManagerExample.app/NIMConfigManagerExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NIMConfigManagerExample/NIMConfigManagerExample-Prefix.pch";
+				INFOPLIST_FILE = "NIMConfigManagerExampleTests/NIMConfigManagerExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3584D5C18BBEC5C0016381A /* Build configuration list for PBXProject "NIMConfigManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3584D9118BBEC5C0016381A /* Debug */,
+				B3584D9218BBEC5C0016381A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3584D9318BBEC5C0016381A /* Build configuration list for PBXNativeTarget "NIMConfigManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3584D9418BBEC5C0016381A /* Debug */,
+				B3584D9518BBEC5C0016381A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3584D9618BBEC5C0016381A /* Build configuration list for PBXNativeTarget "NIMConfigManagerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3584D9718BBEC5C0016381A /* Debug */,
+				B3584D9818BBEC5C0016381A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3584D5918BBEC5C0016381A /* Project object */;
+}
