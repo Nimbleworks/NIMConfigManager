@@ -45,10 +45,8 @@
     XCTAssertTrue(manager.boolean == YES, @"Bools not working ");
 }
 
--(void)testArray{
-    
+-(void)testArray{    
     XCTAssertTrue(manager.array.count == 3, @"Arrays are broken");
-    //XCTFail(@"Nope, not working, not written a test.");
 }
 
 -(void)testData{

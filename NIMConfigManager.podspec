@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NIMConfigManager"
-  s.version          = "0.0.5"
+  s.version          = "0.1.0"
   s.summary          = "A simple solution for managing configuration details within your applications, ideal for templateable apps. "
   s.description      = <<-DESC
                        Creates a singleton for accessing configuration details for your applications. Based extensively on a talk at iOSConfUK by Amy Worral.
