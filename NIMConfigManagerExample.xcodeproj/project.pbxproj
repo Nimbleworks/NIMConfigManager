@@ -26,6 +26,8 @@
 		B3584DA718BBEFE00016381A /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3584DA618BBEFE00016381A /* config.plist */; };
 		B3584DAA18BBF1A00016381A /* NIMConfigManager+ConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584DA918BBF1A00016381A /* NIMConfigManager+ConfigManager.m */; };
 		B3584DAD18BBF4700016381A /* NIMConfigManager+TestConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584DAC18BBF4700016381A /* NIMConfigManager+TestConfig.m */; };
+		B3584DB318BCE24C0016381A /* exampleConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3584DB118BCE24C0016381A /* exampleConfig.plist */; };
+		B3584DB418BCE24C0016381A /* NIMConfigManager+Example.m in Sources */ = {isa = PBXBuildFile; fileRef = B3584DB218BCE24C0016381A /* NIMConfigManager+Example.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		B3584DA918BBF1A00016381A /* NIMConfigManager+ConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NIMConfigManager+ConfigManager.m"; sourceTree = "<group>"; };
 		B3584DAB18BBF4700016381A /* NIMConfigManager+TestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIMConfigManager+TestConfig.h"; sourceTree = "<group>"; };
 		B3584DAC18BBF4700016381A /* NIMConfigManager+TestConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NIMConfigManager+TestConfig.m"; sourceTree = "<group>"; };
+		B3584DB118BCE24C0016381A /* exampleConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = exampleConfig.plist; sourceTree = "<group>"; };
+		B3584DB218BCE24C0016381A /* NIMConfigManager+Example.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NIMConfigManager+Example.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 		B3584D9A18BBED5F0016381A /* NIMConfigManager */ = {
 			isa = PBXGroup;
 			children = (
+				B3584DB118BCE24C0016381A /* exampleConfig.plist */,
+				B3584DB218BCE24C0016381A /* NIMConfigManager+Example.m */,
 				B3584D9B18BBED5F0016381A /* NIMConfigManager.h */,
 				B3584D9C18BBED5F0016381A /* NIMConfigManager.m */,
 			);
@@ -259,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3584DA718BBEFE00016381A /* config.plist in Resources */,
+				B3584DB318BCE24C0016381A /* exampleConfig.plist in Resources */,
 				B3584D7D18BBEC5C0016381A /* Images.xcassets in Resources */,
 				B3584D6F18BBEC5C0016381A /* InfoPlist.strings in Resources */,
 				B3584D7818BBEC5C0016381A /* Main.storyboard in Resources */,
@@ -284,6 +291,7 @@
 				B3584D7118BBEC5C0016381A /* main.m in Sources */,
 				B3584D7B18BBEC5C0016381A /* NIMViewController.m in Sources */,
 				B3584DAA18BBF1A00016381A /* NIMConfigManager+ConfigManager.m in Sources */,
+				B3584DB418BCE24C0016381A /* NIMConfigManager+Example.m in Sources */,
 				B3584D9D18BBED5F0016381A /* NIMConfigManager.m in Sources */,
 				B3584D7518BBEC5C0016381A /* NIMAppDelegate.m in Sources */,
 			);
