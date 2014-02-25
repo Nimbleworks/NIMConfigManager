@@ -2,6 +2,7 @@
 
 [![Version](http://cocoapod-badges.herokuapp.com/v/NIMConfigManager/badge.png)](http://cocoadocs.org/docsets/NIMConfigManager)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/NIMConfigManager/badge.png)](http://cocoadocs.org/docsets/NIMConfigManager)
+[![Build Status](https://travis-ci.org/Nimbleworks/NIMConfigManager.png?branch=master)](https://travis-ci.org/Nimbleworks/NIMConfigManager)
 
 ## Usage
 
