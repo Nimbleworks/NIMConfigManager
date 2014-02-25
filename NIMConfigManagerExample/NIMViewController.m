@@ -19,6 +19,8 @@
     [super viewDidLoad];
     NIMConfigManager *manager = [NIMConfigManager sharedManager];
     manager.configPlist = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"]];
+    
+    
     label.text = manager.labelText;
     [bigButton setHidden:manager.hideBigButton];
     

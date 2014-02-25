@@ -24,10 +24,6 @@
     return shared;
 }
 
--(id)init{
-    return [super init];
-}
-
 + (BOOL)resolveInstanceMethod:(SEL)sel {
     
     
@@ -53,12 +49,15 @@
         if (strcmp(value, "T@\"NSNumber\"")==0){
             return class_addMethod(self, sel, (IMP)DynamicDictionaryGetterNSNumber, @encode(id(*)(id, SEL)));
         }
+        
         if(strcmp(value, "T@\"NSDate\"")==0){
             return class_addMethod(self, sel, (IMP)DynamicDictionaryGetterNSDate, @encode(id(*)(id, SEL)));
         }
+        
         if(strcmp(value, "T@\"NSData\"")==0){
             return class_addMethod(self, sel, (IMP)DynamicDictionaryGetterNSData, @encode(id(*)(id, SEL)));
         }
+        
         if(strcmp(value, "T@\"NSArray\"")==0){
             return class_addMethod(self, sel, (IMP)DynamicDictionaryGetterNSArray, @encode(id(*)(id, SEL)));
         }
@@ -91,7 +90,7 @@ static NSData* DynamicDictionaryGetterNSData(id self, SEL _cmd){
     return [[self configPlist] objectForKey:NSStringFromSelector(_cmd)];
 }
 
-static NSData* DynamicDictionaryGetterNSArray(id self, SEL _cmd){
+static NSArray* DynamicDictionaryGetterNSArray(id self, SEL _cmd){
     return [[self configPlist] objectForKey:NSStringFromSelector(_cmd)];
 }
 
