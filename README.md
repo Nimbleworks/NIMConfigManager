@@ -10,7 +10,7 @@ To use create a category of NIMConfigManager, such as `NIMConfigManager+myApp`. 
 
 If your config plist contains in the following: 
 
-````
+````xml
 	<key>labelText</key>
 	<string>Hello World!</string>
 	<key>hideBigButton</key>
@@ -19,7 +19,7 @@ If your config plist contains in the following:
 
 Our `NIMConfigManager+myApp.h` would look like: 
 
-````
+````obj-c
 	@interface NIMConfigManager (myApp)
 
 	@property(readonly)NSString* labelText;
@@ -29,7 +29,7 @@ Our `NIMConfigManager+myApp.h` would look like:
 ````
 
 And the `NIMConfigManager+myApp.m` would be: 
-````
+````obj-c
 	@implementation NIMConfigManager (myApp)
 
 	@dynamic labelText;
@@ -40,7 +40,7 @@ And the `NIMConfigManager+myApp.m` would be:
 
 Usage is pretty simple, we include the category and initialise the sharedManager, after pass it our `config.plist` file. 
 
-````
+````obj-c
 	NIMConfigManager *manager = [NIMConfigManager sharedManager];
 	manager.configPlist = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle]
                                                                       pathForResource:@"config"
@@ -50,7 +50,7 @@ Usage is pretty simple, we include the category and initialise the sharedManager
 
 Accessing any of the properties we need is as simple as: 
 
-````
+````obj-c
 	manager.labelText;
 ````
 
