@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>facebookAppID</key>
+	<string>Foo-Bar_Baz99</string>
+	<key>googleAnalyticsID</key>
+	<string>UA-123456-99999</string>
+	<key>activateMegaNewFeature</key>
+	<false/>
+</dict>
+</plist>

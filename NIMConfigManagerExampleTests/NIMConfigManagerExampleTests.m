@@ -21,7 +21,10 @@
 {
     [super setUp];
     manager = [NIMConfigManager sharedManager];
-    manager.configPlist = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"test" ofType:@"plist"]];
+    manager.configPlist = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle
+                                                                       bundleForClass:[self class]]
+                                                                      pathForResource:@"test"
+                                                                      ofType:@"plist"]];
 }
 
 - (void)tearDown
