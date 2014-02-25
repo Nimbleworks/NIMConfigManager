@@ -1,23 +1,14 @@
-#
-# Be sure to run `pod spec lint NAME.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# To learn more about the attributes see http://guides.cocoapods.org/syntax/podspec.html
-#
 Pod::Spec.new do |s|
   s.name             = "NIMConfigManager"
-  s.version          = "0.1.0"
+  s.version          = "0.0.5"
   s.summary          = "A short description of NIMConfigManager."
   s.description      = <<-DESC
-                       An optional longer description of NIMConfigManager
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
+  s.homepage         = "https://github.com/Nimbleworks/NIMConfigManager"
   s.license          = 'MIT'
   s.author           = { "John Nye" => "john@nimbleworks.co.uk" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Nimbleworks/NIMConfigManager.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/nimbleworks'
 
   s.platform     = :ios, '7.0'
@@ -25,8 +16,7 @@ Pod::Spec.new do |s|
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
-  s.source_files = 'Classes'
-  s.resources = 'Assets'
+  s.source_files = 'NIMConfigManager'
 
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
