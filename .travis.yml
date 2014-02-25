@@ -1,3 +1,4 @@
 language: objective-c
 xcode_project: NIMConfigManagerExample.xcodeproj
 xcode_scheme: NIMConfigManagerExample
+xcode_sdk: iphonesimulator
