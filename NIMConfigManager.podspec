@@ -1,9 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = "NIMConfigManager"
   s.version          = "0.0.5"
-  s.summary          = "A short description of NIMConfigManager."
+  s.summary          = "A simple solution for managing configuration details within your applications, ideal for templateable apps. "
   s.description      = <<-DESC
-                       
+                       Creates a singleton for accessing configuration details for your applications. Based extensively on a talk at iOSConfUK by Amy Worral.
+
+                       Ideally used in situations where you need more then one target from a single codebase you can use the config.plist to activate features and configure style.
+
                        DESC
   s.homepage         = "https://github.com/Nimbleworks/NIMConfigManager"
   s.license          = 'MIT'
