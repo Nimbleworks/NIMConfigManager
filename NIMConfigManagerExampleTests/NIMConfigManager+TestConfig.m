@@ -16,5 +16,5 @@
 @dynamic data;
 @dynamic date;
 @dynamic array;
-
+@dynamic color;
 @end

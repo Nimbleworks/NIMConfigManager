@@ -8,9 +8,19 @@
 
 #import "NIMConfigManager.h"
 
+static NSCache *colorCache;
+static UIColor *colorWithHexString(NSString *hexString);
+
+@interface NIMConfigManager ()
+
+@property (nonatomic, strong) NSCache *colorCache;
+
+@end
+
 @implementation NIMConfigManager
 
 @synthesize configPlist = _configPlist;
+@synthesize colorCache = _colorCache;
 
 + (NIMConfigManager*)sharedManager;
 {
@@ -33,6 +43,7 @@
         objc_property_t property = class_getProperty([NIMConfigManager class], [selStr UTF8String]);
         
         const char * value = property_getTypeString( property );
+        NSLog(@"%s", value);
 
         if (strcmp(value, "Tc") == 0 || strcmp(value, "TB")==0){
             return class_addMethod(self, sel, (IMP)DynamicDictionaryGetterBool, @encode(id(*)(id, SEL)));
@@ -61,7 +72,11 @@
         if(strcmp(value, "T@\"NSArray\"")==0){
             return class_addMethod(self, sel, (IMP)DynamicDictionaryGetterNSArray, @encode(id(*)(id, SEL)));
         }
-
+        
+        if(strcmp(value, "T@\"UIColor\"")==0) {
+            return class_addMethod(self, sel, (IMP)DynamicDictionaryGetterUIColor, @encode(id(*)(id, SEL)));
+        }
+        
     }
     return [super resolveInstanceMethod:sel];
 }
@@ -94,6 +109,27 @@ static NSArray* DynamicDictionaryGetterNSArray(id self, SEL _cmd){
     return [[self configPlist] objectForKey:NSStringFromSelector(_cmd)];
 }
 
+static UIColor* DynamicDictionaryGetterUIColor(id self, SEL _cmd){
+    NSString *key = NSStringFromSelector(_cmd);
+    
+    if (colorCache == nil){
+        colorCache = [[NSCache alloc] init];
+    }
+    
+    UIColor *cacheColor = [colorCache objectForKey:key];
+    if (cacheColor != nil) {
+        return cacheColor;
+    }
+    
+    NSString *colorString = [[self configPlist] objectForKey:key];
+    UIColor *color = colorWithHexString(colorString);
+    if (color != nil) {
+        [colorCache setObject:color forKey:key];
+        return color;
+    }
+    return [UIColor blackColor];
+}
+
 const char* property_getTypeString (objc_property_t property){
     const char * attrs = property_getAttributes( property );
     
@@ -112,6 +148,38 @@ const char* property_getTypeString (objc_property_t property){
     memcpy(buffer, attrs, len);
     buffer[len] = '\0';
     return buffer;
+}
+
+
+
+static UIColor *colorWithHexString(NSString *hexString) {
+    
+    /**
+    *
+    *Taken from DB5 by Brent Simmons https://github.com/quartermaster/DB5/blob/master/Source/VSTheme.m
+    *
+    **/
+
+    /*Picky. Crashes by design.*/
+	
+	if (hexString == nil || [hexString length]==0)
+		return [UIColor blackColor];
+    
+	NSMutableString *s = [hexString mutableCopy];
+	[s replaceOccurrencesOfString:@"#" withString:@"" options:0 range:NSMakeRange(0, [hexString length])];
+	CFStringTrimWhitespace((__bridge CFMutableStringRef)s);
+    
+	NSString *redString = [s substringToIndex:2];
+	NSString *greenString = [s substringWithRange:NSMakeRange(2, 2)];
+	NSString *blueString = [s substringWithRange:NSMakeRange(4, 2)];
+    
+	unsigned int red = 0, green = 0, blue = 0;
+	[[NSScanner scannerWithString:redString] scanHexInt:&red];
+	[[NSScanner scannerWithString:greenString] scanHexInt:&green];
+	[[NSScanner scannerWithString:blueString] scanHexInt:&blue];
+    
+	return [UIColor colorWithRed:(CGFloat)red/255.0f green:(CGFloat)green/255.0f blue:(CGFloat)blue/255.0f alpha:1.0f];
+
 }
 
 @end

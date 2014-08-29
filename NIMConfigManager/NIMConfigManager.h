@@ -16,6 +16,7 @@
 }
 
 @property (retain) NSDictionary *configPlist;
+
 + (NIMConfigManager*)sharedManager;
 
 @end

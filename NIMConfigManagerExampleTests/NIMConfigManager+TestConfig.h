@@ -17,5 +17,6 @@
 @property(readonly)NSData* data;
 @property(readonly)NSDate* date;
 @property(readonly)NSArray* array;
+@property(readonly)UIColor* color;
 
 @end

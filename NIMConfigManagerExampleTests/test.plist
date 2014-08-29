@@ -18,5 +18,7 @@
 	</array>
 	<key>data</key>
 	<data>VGhpcyBpcyBEYXRh</data>
+	<key>color</key>
+	<string>#7878FC</string>
 </dict>
 </plist>

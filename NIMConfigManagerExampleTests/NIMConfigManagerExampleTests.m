@@ -65,5 +65,14 @@
     XCTAssertTrue([d isEqualToDate:manager.date], @"Dates are not working");
 }
 
+-(void)testColor{
+    UIColor *aColor = [UIColor colorWithRed:0.471 green:0.471 blue:0.990 alpha:1.000];
+    if (![aColor isEqual:manager.color]) {
+        NSLog(@"%@", manager.color);
+        NSLog(@"%@", aColor);
+        XCTFail(@"Colours Don't Match");
+    }
+}
+
 
 @end
